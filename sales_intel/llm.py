@@ -138,7 +138,7 @@ def summarize_from_crawl(
     model: str,
 ) -> SalesBrief:
     blob = format_crawl_for_prompt(texts)
-    prompt = f"""You are a B2B sales researcher. Using ONLY the crawled website text below, produce a detailed JSON summary.
+    prompt = f"""You are a B2B sales researcher for an IT services company. Using ONLY the crawled website text below, produce a detailed JSON summary.
 
 Lead: {lead_input}
 Resolved URL: {resolved_url}
@@ -153,7 +153,7 @@ Required JSON keys:
 - contact_details (phones, emails, address if present in text)
 - sections: array of {{"title","content"}} for About, Services, Contact, Audience as appropriate
 - b2b_qualified (boolean), b2b_confidence (0-100)
-- sales_questions: exactly 3 strings
+- sales_questions: exactly 3 strings, framed as consultative questions an IT services company can ask to help this business improve technology, automation, integrations, analytics, customer experience, or operations.
 - rationale, signals (array of strings), research_notes
 
 Crawled text:
@@ -189,15 +189,27 @@ def brief_from_json(lead_input: str, resolved_url: str, brief_json: dict[str, An
             if t or c:
                 sections.append(SectionItem(title=t or "Section", content=c))
 
+    services_offered = str(brief_json.get("services_offered", "") or "")
+    core_product = str(brief_json.get("core_product_or_service", "") or "")
+    company_overview = str(brief_json.get("company_overview", "") or "")
+    audience = str(brief_json.get("target_customer_or_audience", "") or "")
+    sales_questions = _ensure_it_sales_questions(
+        sales_questions=sales_questions,
+        services_offered=services_offered,
+        core_product_or_service=core_product,
+        company_overview=company_overview,
+        target_customer_or_audience=audience,
+    )
+
     return SalesBrief(
         lead_input=lead_input,
         resolved_url=resolved_url,
         company_name=str(brief_json.get("company_name", "") or ""),
-        company_overview=str(brief_json.get("company_overview", "") or ""),
-        core_product_or_service=str(brief_json.get("core_product_or_service", "") or ""),
-        target_customer_or_audience=str(brief_json.get("target_customer_or_audience", "") or ""),
+        company_overview=company_overview,
+        core_product_or_service=core_product,
+        target_customer_or_audience=audience,
         contact_details=str(brief_json.get("contact_details", "") or ""),
-        services_offered=str(brief_json.get("services_offered", "") or ""),
+        services_offered=services_offered,
         sections=sections,
         b2b_qualified=bool(brief_json.get("b2b_qualified", False)),
         b2b_confidence=max(0, min(100, int(brief_json.get("b2b_confidence") or 0))),
@@ -210,3 +222,70 @@ def brief_from_json(lead_input: str, resolved_url: str, brief_json: dict[str, An
 
 def safe_json_parse(raw: str) -> dict[str, Any]:
     return _parse_json_loose(raw)
+
+
+def _ensure_it_sales_questions(
+    sales_questions: list[str],
+    services_offered: str,
+    core_product_or_service: str,
+    company_overview: str,
+    target_customer_or_audience: str,
+) -> list[str]:
+    """
+    Ensure 3 actionable sales questions from an IT-services provider perspective.
+    Uses model output if good, fills missing/generic items with IT-focused alternatives.
+    """
+    context = " ".join(
+        [
+            services_offered.strip(),
+            core_product_or_service.strip(),
+            company_overview.strip(),
+            target_customer_or_audience.strip(),
+        ]
+    ).lower()
+    domain = _infer_domain(context)
+
+    curated: list[str] = []
+    for q in sales_questions:
+        qq = q.strip()
+        if not qq:
+            continue
+        if _looks_too_generic(qq):
+            continue
+        curated.append(qq)
+        if len(curated) == 3:
+            break
+
+    defaults = [
+        f"For your {domain} operations, where are you seeing the biggest process bottlenecks that better software automation or integration could remove?",
+        "Which customer-facing and back-office workflows are still manual today, and what would success look like if we digitized them end to end?",
+        "What systems (website, CRM, ERP, scheduling, invoicing, support) are currently disconnected, and how can an IT integration roadmap improve speed, visibility, and revenue?",
+    ]
+
+    for q in defaults:
+        if len(curated) >= 3:
+            break
+        curated.append(q)
+    return curated[:3]
+
+
+def _looks_too_generic(question: str) -> bool:
+    q = question.lower()
+    generic_markers = [
+        "primary revenue-generating service",
+        "ideal customer profile today",
+        "what challenges are currently limiting growth",
+    ]
+    return any(m in q for m in generic_markers)
+
+
+def _infer_domain(context: str) -> str:
+    if any(k in context for k in ("roof", "siding", "construction")):
+        return "field-service and project delivery"
+    if any(k in context for k in ("plumbing", "drain", "hvac", "repair", "locksmith")):
+        return "service dispatch and operations"
+    if any(k in context for k in ("bakery", "restaurant", "cafe", "food")):
+        return "retail and order operations"
+    if any(k in context for k in ("landscap", "lawn", "tree care", "turf")):
+        return "on-site service operations"
+    return "business"

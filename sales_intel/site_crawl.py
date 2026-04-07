@@ -6,6 +6,7 @@ import re
 import time
 from urllib.parse import urljoin, urlparse
 
+import requests
 from bs4 import BeautifulSoup
 from selenium.webdriver.remote.webdriver import WebDriver
 
@@ -91,6 +92,86 @@ def crawl_company_pages(driver: WebDriver, start_url: str) -> tuple[dict[str, st
             time.sleep(0.8)
             fetched.append(driver.current_url)
             texts[role] = extract_page_text(driver.page_source)
+        except Exception:
+            continue
+
+    return texts, fetched
+
+
+def _fetch_html_requests(url: str, timeout: int = 25) -> str:
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+            "(KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+        ),
+        "Accept": "text/html,application/xhtml+xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+    }
+    r = requests.get(url, headers=headers, timeout=timeout, allow_redirects=True)
+    r.raise_for_status()
+    return r.text
+
+
+def _candidate_urls(start_url: str) -> list[str]:
+    """Try practical host/protocol variants for blocked/broken direct URLs."""
+    u = start_url.strip()
+    p = urlparse(u if "://" in u else f"https://{u}")
+    host = (p.netloc or p.path).strip("/")
+    path = p.path if p.netloc else ""
+    host_no_www = host[4:] if host.startswith("www.") else host
+    host_www = host if host.startswith("www.") else f"www.{host}"
+    variants = [
+        f"https://{host}{path}",
+        f"https://{host_no_www}{path}",
+        f"https://{host_www}{path}",
+        f"http://{host}{path}",
+        f"http://{host_no_www}{path}",
+        f"http://{host_www}{path}",
+    ]
+    out: list[str] = []
+    seen: set[str] = set()
+    for v in variants:
+        if v not in seen:
+            seen.add(v)
+            out.append(v)
+    return out
+
+
+def crawl_company_pages_requests(start_url: str) -> tuple[dict[str, str], list[str]]:
+    """
+    Fallback crawler when Selenium content is blocked/empty.
+    Uses requests + BS4 on landing/about/contact/services pages.
+    """
+    texts: dict[str, str] = {}
+    fetched: list[str] = []
+
+    landing_html = ""
+    chosen_url = start_url
+    last_error: Exception | None = None
+    for candidate in _candidate_urls(start_url):
+        try:
+            landing_html = _fetch_html_requests(candidate)
+            chosen_url = candidate
+            break
+        except Exception as exc:
+            last_error = exc
+            continue
+    if not landing_html:
+        if last_error:
+            raise last_error
+        raise RuntimeError("Could not fetch landing page via requests fallback.")
+
+    fetched.append(chosen_url)
+    texts["landing"] = extract_page_text(landing_html)
+
+    internal = discover_internal_urls(chosen_url, landing_html)
+    for role, url in internal.items():
+        if url in fetched:
+            continue
+        try:
+            html = _fetch_html_requests(url)
+            fetched.append(url)
+            texts[role] = extract_page_text(html)
         except Exception:
             continue
 
