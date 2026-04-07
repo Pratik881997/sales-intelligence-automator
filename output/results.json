@@ -1,0 +1,352 @@
+[
+  {
+    "lead_input": "https://www.houstonroofingonline.com",
+    "resolved_url": "https://www.houstonroofingonline.com",
+    "company_name": "Houston Roofing Online",
+    "company_overview": "Houston Roofing Online appears to be a company specializing in roofing services, based on the domain name.",
+    "core_product_or_service": "Roofing",
+    "target_customer_or_audience": "Residential and commercial property owners in Houston, Texas",
+    "contact_details": "{'phones': [], 'emails': [], 'address': ''}",
+    "services_offered": "['Roofing services']",
+    "sections": "[]",
+    "b2b_qualified": false,
+    "b2b_confidence": 30,
+    "sales_questions": [
+      "What types of roofing services does Houston Roofing Online provide?",
+      "Who are their typical customers (residential, commercial, etc.)?",
+      "Do they offer any unique selling points or specializations?"
+    ],
+    "rationale": "The website is a landing page with no content about the company, services, audience, or contact details. The lack of information suggests it may not be a B2B company.",
+    "signals": [
+      "Domain name suggests roofing services",
+      "No contact details or service descriptions found"
+    ],
+    "research_notes": "direct_url | The website appears to be under construction or not fully functional, which could explain the lack of information."
+  },
+  {
+    "lead_input": "BrightPlay Turf Artificial Turf & Landscaping, Chicago IL",
+    "resolved_url": "https://brightplayturf.com/",
+    "company_name": "BrightPlay Turf Artificial Turf & Landscaping",
+    "company_overview": "BrightPlay Turf specializes in premium artificial turf solutions for residential and commercial properties throughout the Chicago area. They focus on expert installation and clean, lasting results, offering services for both homeowners and commercial clients.",
+    "core_product_or_service": "Premium Artificial Turf Solutions",
+    "target_customer_or_audience": "Homeowners and commercial clients across Chicago",
+    "contact_details": "{'phones': ['(224) 535-0828'], 'emails': ['aldair@brightplayturf.com'], 'address': 'Chicago, IL'}",
+    "services_offered": "['Artificial Grass Installation', 'Residential Services', 'Commercial Services']",
+    "sections": "[{\"title\": \"HOME / LANDING\", \"content\": \"Artificial Grass Installation Company | BrightPlay Turf Skip to content Artificial Grass Installation Company Precision Turf Design and Installation for Every Setting BrightPlay Turf delivers customized artificial turf solutions for residential and commercial properties across the Chicago region. View Work Contact Us Chicago Turf Installation About Us At BrightPlay Turf, we focus on expert installation and clean, lasting results. Whether it’s a backyard, dog park, or rooftop, our team brings experience, precision, and care to every turf project.\"}, {\"title\": \"ABOUT\", \"content\": \"About Us | BrightPlay Turf Skip to content About Company Overview At BrightPlay Turf, we specialize in premium artificial turf solutions for both residential and commercial properties throughout the Chicago area. Our mission is simple: to help you create outdoor spaces that are clean, low-maintenance, and built to last.\"}, {\"title\": \"CONTACT\", \"content\": \"Schedule a Free Turf Consultation | BrightPlay Turf Skip to content Contact Get in Touch with BrightPlay Turf Have a question about artificial turf for your home or business? Whether you’re looking for a full installation or just exploring your options, we’re here to help. Contact BrightPlay Turf today and let’s talk about how we can transform your outdoor space into something low-maintenance, durable, and beautiful — all year long.\"}]",
+    "b2b_qualified": true,
+    "b2b_confidence": 80,
+    "sales_questions": [
+      "What specific artificial turf solutions does BrightPlay Turf offer for commercial properties?",
+      "Can BrightPlay Turf handle large-scale projects such as playgrounds and rooftop terraces?",
+      "How does BrightPlay Turf ensure the durability of their artificial turf in Chicago's weather conditions?"
+    ],
+    "rationale": "The company primarily focuses on B2B services, offering artificial grass installation for commercial properties. They have experience handling large-scale projects and prioritize durability in their products.",
+    "signals": [
+      "Artificial Grass Installation Company",
+      "Precision Turf Design and Installation for Every Setting",
+      "commercial properties across the Chicago region",
+      "schools, dog parks, rooftops, courtyards, and other high-traffic commercial areas"
+    ],
+    "research_notes": "google_search | BrightPlay Turf is a B2B company specializing in artificial turf solutions. They offer services for both residential and commercial properties, with a focus on durability and low maintenance."
+  },
+  {
+    "lead_input": "https://www.springhilllandscaping.com",
+    "resolved_url": "https://www.springhilllandscaping.com",
+    "company_name": "King of the Hill Landscaping",
+    "company_overview": "King of the Hill is a landscaping company offering services for both residential and commercial properties, including lawn maintenance, stone edging, planting/sodding/arbor services, pavers, pest control, landscape design, hedge trimming, water feature installation, irrigation systems, soil erosion prevention, restoration methods, fencing, and more. They prioritize sustainability in their designs.",
+    "core_product_or_service": "Landscaping Services",
+    "target_customer_or_audience": "Residential and Commercial clients",
+    "contact_details": "{'phones': ['+1 (352) 610-0058'], 'emails': [], 'address': None}",
+    "services_offered": "['Lawn Maintenance', 'Stone Edging', 'Planting/Sodding/Arbor Services', 'Pavers', 'Pest Control', 'Landscape Design', 'Hedge Trimming', 'Water Feature Installation', 'Irrigation Systems', 'Soil Erosion Prevention', 'Restoration Methods', 'Fencing']",
+    "sections": "[{\"title\": \"HOME / LANDING\", \"content\": \"...\"}, {\"title\": \"Products Compare\", \"content\": \"Your products compare list is empty.\"}, {\"title\": \"CONTACT\", \"content\": \"Contact Us Name * First Last Phone Number * Email * Comment or Message * Message Submit Send Message\"}]",
+    "b2b_qualified": true,
+    "b2b_confidence": 80,
+    "sales_questions": [
+      "What types of commercial landscaping projects has King of the Hill worked on?",
+      "Can King of the Hill provide references from previous commercial clients?",
+      "Does King of the Hill offer a guarantee or warranty for their landscaping services?"
+    ],
+    "rationale": "The website mentions working with both residential and commercial properties, and the services offered are typically associated with B2B transactions. The presence of a 'Products Compare' section also suggests a potential B2B focus.",
+    "signals": [
+      "Working with Commercial Properties",
+      "Products Compare Section"
+    ],
+    "research_notes": "direct_url | The website does not provide detailed information about the company's B2B clients or projects. It would be beneficial to reach out to the company for more specific information."
+  },
+  {
+    "lead_input": "Joe's Backyard Landscaping Phoenix AZ",
+    "resolved_url": "https://www.joes-yard.com/about-us/",
+    "company_name": "Joe's Yard, Tree + Irrigation",
+    "company_overview": "Joe's Yard, Tree + Irrigation is a Tucson-based landscaping company that has been serving the community since 2013. They offer a comprehensive range of landscaping services tailored to enhance the beauty of residential and commercial properties. Their mission is to make Arizona beautiful, one property at a time, with a focus on conscientious services such as xeriscaping to conserve water resources.",
+    "core_product_or_service": "Landscaping Services",
+    "target_customer_or_audience": "Residential and commercial property owners in the Tucson, AZ area",
+    "contact_details": "{'phones': ['520-365-3938'], 'emails': [], 'address': None}",
+    "services_offered": "['Landscape Design and Installation', 'Tree Services', 'Cactus Removal', 'Landscape Maintenance', 'Irrigation Services']",
+    "sections": "[{\"title\": \"About Us\", \"content\": \"When you need the help of a trusted Tucson landscaping company, there’s one place to turn to: Joe’s Yard, Tree + Irrigation. What makes us a leader in Tucson landscaping services? We’ve been serving the Tucson community and the surrounding areas since 2013.\"}, {\"title\": \"Services\", \"content\": \"Our Landscape Services in Tucson, AZ Do you need landscape services in Tucson, AZ? If so, you can count on Joe’s Yard, Tree + Irrigation!\"}]",
+    "b2b_qualified": false,
+    "b2b_confidence": 30,
+    "sales_questions": [
+      "What types of commercial properties have you worked with?",
+      "Can you provide references from previous commercial clients?",
+      "Do you offer ongoing maintenance contracts for commercial properties?"
+    ],
+    "rationale": "The company's focus on residential and commercial property owners suggests a potential B2C orientation, but the services offered and the professionalism displayed on the website indicate a potential B2B client. However, there is no clear indication of specific B2B clients or contracts.",
+    "signals": [
+      "Residential and commercial property owners",
+      "Certified professionals",
+      "Quality & Reliability",
+      "Affordable & Excellent Results"
+    ],
+    "research_notes": "google_search | The company's website does not provide much information about their B2B activities. It would be beneficial to reach out to the company for more information."
+  },
+  {
+    "lead_input": "Sunrise Plumbing & Drain Services Tampa FL",
+    "resolved_url": "https://sunrisedrainage.com/",
+    "company_name": "Sunrise Plumbing & Drain Services Tampa FL",
+    "company_overview": "Sunrise Drainage is a locally-owned and operated business in Florida, specializing in eco-friendly drainage solutions since 1992. They offer customized services tailored to Florida's unique conditions, focusing on efficient, durable designs that prioritize water conservation and customer service.",
+    "core_product_or_service": "Customized Yard Water Drainage Services",
+    "target_customer_or_audience": "Homeowners in Tampa Bay and Sarasota areas",
+    "contact_details": "{'phones': ['941-206-6686'], 'emails': ['info@sunrisedrainage.com'], 'address': 'Office 261 Alternate 19 Palm Harbor, FL 34683'}",
+    "services_offered": "['French Drains', 'Gutter & Downspout Drains', 'Sump Pump Drainage', 'Channel Drains', 'Yard Drainage', 'Drainage Consultation']",
+    "sections": "[{\"title\": \"HOME / LANDING\", \"content\": \"...\"}, {\"title\": \"ABOUT\", \"content\": \"...\"}, {\"title\": \"SERVICES\", \"content\": \"...\"}, {\"title\": \"CONTACT\", \"content\": \"...\"}]",
+    "b2b_qualified": false,
+    "b2b_confidence": 30,
+    "sales_questions": [
+      "What is the process for designing a custom drainage system?",
+      "How does Sunrise Drainage's eco-friendly approach impact the cost and effectiveness of their services?",
+      "Can Sunrise Drainage provide references or case studies from similar projects in my area?"
+    ],
+    "rationale": "The company primarily focuses on residential properties, but some aspects of their services could potentially be relevant to B2B clients. However, without specific information about working with businesses, the confidence level is low.",
+    "signals": [
+      "locally-owned and operated business",
+      "decades of experience",
+      "eco-friendly practices"
+    ],
+    "research_notes": "google_search | The company's focus on residential properties suggests a B2C orientation. However, their emphasis on customized solutions, sustainable practices, and community involvement could make them open to working with businesses in certain cases."
+  },
+  {
+    "lead_input": "https://www.denverlockandsafe.com",
+    "resolved_url": "https://www.denverlockandsafe.com",
+    "company_name": "Denver Lock And Safe",
+    "company_overview": "Denver Lock And Safe is a leading locksmith firm in the Denver, CO area that provides advanced locking options, key cutting, lock repairs, maintenance work, and other services to clients from automotive, residential, and commercial sectors. They operate 24/7 and have mobile vans for doorstep solutions.",
+    "core_product_or_service": "Locksmith Services",
+    "target_customer_or_audience": "Clients from automotive, residential, and commercial sectors in the Denver, CO area",
+    "contact_details": "{'phones': ['303-357-8311'], 'emails': ['info@denverlockandsafe.com'], 'address': 'Denver Lock And Safe, Denver, CO 80222'}",
+    "services_offered": "['Automotive locksmith services', 'Residential locksmith services', 'Commercial locksmith services', 'Emergency locksmith services']",
+    "sections": "[{\"title\": \"HOME / LANDING\", \"content\": \"...\"}, {\"title\": \"CONTACT\", \"content\": \"...\"}]",
+    "b2b_qualified": true,
+    "b2b_confidence": 80,
+    "sales_questions": [
+      "What specific advanced locking options do you offer?",
+      "Can you provide details about your emergency response operations?",
+      "What training do your technicians undergo?"
+    ],
+    "rationale": "The website provides information about the company's services and contact details, indicating a B2B focus due to the services offered and the target audience.",
+    "signals": [
+      "Locksmith Services Any Locksmith Service Emergency Locksmith Car Lockout House Lock Out Apartment Lock Out Office Lockout Residential Lock Change Commercial Lock Change Automotive Lock Change Lock Rekey Lock Installation Car Key Made Car Key Program Ignition Repair/ Change Transponder Key High Security Locks Locks Repair 24 Hr Locksmith Service",
+      "We strive to stay ahead of the innovation curve and redefine the boundaries of excellence.",
+      "From providing clients in Denver, CO area with advanced locking options to catering to other basic needs such as key cutting, lock repairs, maintenance work."
+    ],
+    "research_notes": "direct_url | The company's website emphasizes quality, continuous improvement, and a wide range of services. They operate 24/7 and have mobile vans for doorstep solutions. The services offered extend to clients from automotive, residential, and commercial sectors."
+  },
+  {
+    "lead_input": "Green Leaf Lawn Care Columbus OH",
+    "resolved_url": "http://greenleaflawnsllc.com/",
+    "company_name": "Green Leaf Lawn Care Columbus OH",
+    "company_overview": "Green Leaf Lawns is a local professional lawn care service company established in 2010, serving New Albany, Blacklick, and Gahanna. They strive to offer a seamless service with attention to detail and customer communication, which has contributed to their longevity in business.",
+    "core_product_or_service": "Professional lawn care services",
+    "target_customer_or_audience": "Residential properties in Blacklick, Gahanna, New Albany, and surrounding areas",
+    "contact_details": "{'phones': ['(614) 563-4877'], 'emails': ['charlesrumery@gmail.com'], 'address': 'Greenleaflawnsllc 1818 Reynoldsburg - New Albany Road, Blacklick, OH, USA'}",
+    "services_offered": "['Lawn cutting management', 'Mulch install', 'Pruning and trimming', 'Mulch bed edging', 'Clean outs', 'Lawn repair and grading', 'Driveway grading']",
+    "sections": "[{\"title\": \"About\", \"content\": \"Our Mission, Our History, My Commitment\"}, {\"title\": \"Services\", \"content\": \"Lawn cutting management, Mulch install, Pruning and trimming, Mulch bed edging, Clean outs, Lawn repair and grading, Driveway grading\"}, {\"title\": \"Contact\", \"content\": \"Calling or sending a text to our number is the fastest way. When calling or filling out the form online please provide your Address where service is to be performed.\"}, {\"title\": \"Audience\", \"content\": \"Residential properties in Blacklick, Gahanna, New Albany, and surrounding areas\"}]",
+    "b2b_qualified": false,
+    "b2b_confidence": 0,
+    "sales_questions": [
+      "What sets Green Leaf Lawn Care apart from other lawn care services?",
+      "Can Green Leaf Lawn Care provide references or testimonials from satisfied customers?",
+      "What is the typical response time for a service request at Green Leaf Lawn Care?"
+    ],
+    "rationale": "The website primarily focuses on residential services, which indicates a B2C focus. However, the professional nature of the services offered and the contact details provided suggest potential B2B opportunities.",
+    "signals": [
+      "Local professional lawn care services",
+      "Serving New Albany, Blacklick & Gahanna",
+      "Attention to detail and customer communication"
+    ],
+    "research_notes": "google_search | The website could benefit from clearer indications of B2B services or opportunities. The company's focus on quality and customer service may appeal to property management companies or real estate developers."
+  },
+  {
+    "lead_input": "https://www.redtruckbakery.com",
+    "resolved_url": "https://www.redtruckbakery.com",
+    "company_name": "Nachman Executive Consultants",
+    "company_overview": "A business development consulting firm founded by Sherry Nachman, known for her expertise in strategic growth planning, leadership development, and market expansion. They also offer private event planning and curation services.",
+    "core_product_or_service": "Business development consulting services",
+    "target_customer_or_audience": "Executives and businesses seeking growth, leadership development, and market expansion",
+    "contact_details": "{'emails': ['sherry@nachmanexec.com'], 'phones': ['443.465.7833']}",
+    "services_offered": "['Strategic Growth Planning and Consulting', 'Leadership Development', 'Market Expansion', 'Private Event Planning and Curating']",
+    "sections": "[{\"title\": \"HOME / LANDING\", \"content\": \"... description of services offered, learning more about Sherry Nachman and upcoming events ...\"}, {\"title\": \"ABOUT\", \"content\": \"... overview of Sherry Nachman's background, the philosophy and mission of Nachman Executive Consultants ...\"}]",
+    "b2b_qualified": true,
+    "b2b_confidence": 90,
+    "sales_questions": [
+      "What specific growth strategies can you offer for our business?",
+      "How have your consulting services helped similar businesses in our industry?",
+      "Can you provide more details about your event planning and curation services?"
+    ],
+    "rationale": "The company offers B2B consulting services, focuses on executives and businesses as their target audience, and provides detailed information about their services and background on the website.",
+    "signals": [
+      "Business development",
+      "Consulting services",
+      "Executive leadership",
+      "Market expansion",
+      "Event planning"
+    ],
+    "research_notes": "direct_url | The company has a strong online presence with a clear focus on business development consulting. They offer various services including strategic growth planning, leadership development, market expansion, and private event planning. Sherry Nachman is the founder and president of the company."
+  },
+  {
+    "lead_input": "Blue Ridge HVAC Services Roanoke VA",
+    "resolved_url": "https://blueridgeheatingandair.com/",
+    "company_name": "Blue Ridge Heating & Air",
+    "company_overview": "Family-owned and operated HVAC company established in 1989, serving the New River Valley with a reputation for quality, value, and excellent service. All technicians are NATE certified and licensed Class A general contractors.",
+    "core_product_or_service": "HVAC Services (Heating, Air Conditioning, and related products)",
+    "target_customer_or_audience": "Residential and commercial clients across the New River Valley, including Blacksburg, Christiansburg, Roanoke, Floyd, Giles, and surrounding areas.",
+    "contact_details": "{'address': '925 Cambria St. NE Christiansburg, VA 24073', 'phone': '(540) 381-1137'}",
+    "services_offered": "['Residential HVAC', 'Commercial HVAC', 'Air conditioning repair', 'Heating services', 'Energy savings agreements', 'Duct cleaning']",
+    "sections": "[{\"title\": \"Home\", \"content\": \"Landing page content providing an overview of the company and services.\"}, {\"title\": \"About\", \"content\": \"History, values, and family background of Blue Ridge Heating & Air.\"}, {\"title\": \"Contact\", \"content\": \"Contact information for the company, including address and phone number.\"}]",
+    "b2b_qualified": false,
+    "b2b_confidence": 30,
+    "sales_questions": [
+      "What sets Blue Ridge Heating & Air apart from competitors?",
+      "Can you provide more details about the company's energy savings agreements?",
+      "Are there any ongoing promotions or discounts for commercial clients?"
+    ],
+    "rationale": "The company primarily caters to residential and individual customers, but some services are applicable to businesses. The focus on family values and community service suggests a potential emphasis on customer satisfaction.",
+    "signals": [
+      "Family-owned and operated",
+      "Serving families and businesses",
+      "NATE certified technicians",
+      "Licensed Class A general contractor"
+    ],
+    "research_notes": "google_search | The company's website showcases positive client reviews, highlighting their professionalism, responsiveness, and commitment to customers."
+  },
+  {
+    "lead_input": "Acme Roofing & Construction Dallas TX",
+    "resolved_url": "https://www.acmeconstructiontx.com/about",
+    "company_name": "Acme Roofing & Construction Dallas TX",
+    "company_overview": "Acme Construction, formerly known as Acme Roof Systems, is a highly-regarded construction company serving the DFW metroplex for over 30 years. They have amassed numerous certifications, awards, and recognitions, including being an A+ Accredited Business through the Better Business Bureau, Angie’s List Super Service award winners, and voted tops in Tarrant County in 2019 and 2020. Their team, led by Jody Waggoner and Heidi Sligar, boasts over 80 years of combined expertise in residential and commercial construction.",
+    "core_product_or_service": "Construction Services",
+    "target_customer_or_audience": "['Residential clients', 'Commercial businesses']",
+    "contact_details": "{'emails': ['heidi@acmeroofsystems.com'], 'phones': ['(817)-438-2024'], 'address': None}",
+    "services_offered": "['Home Remodel', 'Small Projects', 'Roofing', 'Exterior Improvements', 'Pergolas', 'Outdoor Kitchens', 'Patio Extensions', 'Commercial Office Updates']",
+    "sections": "[{\"title\": \"About\", \"content\": \"Acme Construction has been proudly serving the DFW metroplex for over 30 years!\"}, {\"title\": \"Services\", \"content\": \"At Acme Construction, we pride ourselves on offering a comprehensive range of services to meet all your construction needs.\"}, {\"title\": \"Contact\", \"content\": \"Contact us We can’t wait to give you your dream home!\"}]",
+    "b2b_qualified": true,
+    "b2b_confidence": 90,
+    "sales_questions": [
+      "What specific construction needs does the client have?",
+      "What is the budget for the project?",
+      "Is there a preferred timeline for the project?"
+    ],
+    "rationale": "The company's focus on commercial and residential construction, as well as their extensive experience and awards, indicate a B2B orientation.",
+    "signals": [
+      "DFW metroplex",
+      "residential clients",
+      "commercial businesses",
+      "A+ Accredited Business",
+      "Angie’s List Super Service award winners"
+    ],
+    "research_notes": "google_search | The company's website showcases their extensive experience and awards, indicating a strong reputation in the construction industry. However, more information is needed about their specific offerings for B2B clients."
+  },
+  {
+    "lead_input": "https://www.bostonplumbing.com",
+    "resolved_url": "https://www.bostonplumbing.com",
+    "company_name": "",
+    "company_overview": "",
+    "core_product_or_service": "",
+    "target_customer_or_audience": "",
+    "contact_details": "",
+    "services_offered": "",
+    "sections": "[]",
+    "b2b_qualified": false,
+    "b2b_confidence": 0,
+    "sales_questions": [],
+    "rationale": "Model output was not valid JSON; see research_notes.",
+    "signals": [],
+    "research_notes": "direct_url | LLM JSON parse failed. Raw (truncated): {\n  \"company_name\": \"Boston Plumbing\",\n  \"company_overview\": \"Boston Plumbing appears to be a professional plumbing service company with an excellent rating of 4.6 out of 5.\",\n  \"services_offered\": [\"Plumbing services\"],\n  \"core_product_or_service\": \"Plumbing services\",\n  \"target_customer_or_audience\": \"Residential and commercial customers in the Boston area requiring plumbing services\",\n  \"contact_details\": {\n    \"phones\": [],\n    \"emails\": [],\n    \"address\": \"\"\n  },\n  \"sections\": [\n    {\"title"
+  },
+  {
+    "lead_input": "Pacific Northwest Tree Care Portland OR",
+    "resolved_url": "https://pacificnwpdx.com/",
+    "company_name": "Pacific Northwest Tree Care Portland OR",
+    "company_overview": "Based in Portland, Oregon, Pacific Northwest Tree Care specializes in tree care services, offering solutions for tree pruning, removal, and health management.",
+    "core_product_or_service": "Tree Care Services",
+    "target_customer_or_audience": "Residential and commercial clients in the Portland, Oregon area requiring tree care services.",
+    "contact_details": "{'address': '1430 NW 23rd Ave, Portland, OR 97210'}",
+    "services_offered": "['Tree Pruning', 'Tree Removal', 'Health Management']",
+    "sections": "[{\"title\": \"Home\", \"content\": \"Landing page for Pacific Northwest Tree Care.\"}, {\"title\": \"About Us\", \"content\": \"Information about the company's services, team, and mission.\"}]",
+    "b2b_qualified": false,
+    "b2b_confidence": 30,
+    "sales_questions": [
+      "What sets Pacific Northwest Tree Care apart from other tree care companies in the Portland area?",
+      "Can you provide case studies or testimonials from commercial clients?",
+      "Are there any ongoing promotions or discounts for commercial contracts?"
+    ],
+    "rationale": "The company's focus on residential and commercial services, as well as its location in a major city, suggest potential B2B opportunities. However, the lack of specific information about working with businesses lowers the confidence level.",
+    "signals": [
+      "Mention of both residential and commercial clients",
+      "Location in a populated area",
+      "Lack of clear B2B focus"
+    ],
+    "research_notes": "google_search | The website is currently experiencing an error, which may limit the information available. It would be beneficial to follow up with the company for more detailed information."
+  },
+  {
+    "lead_input": "Maple Street Auto Repair Madison WI",
+    "resolved_url": "https://www.maplestreetrods.com/",
+    "company_name": "Maple Street Rods & Collision LLC",
+    "company_overview": "A full-service auto body shop specializing in both repairing late model vehicles and creating custom cars or trucks, with a history rooted in personal passion for classic cars. The owner started working on their first classic car at the age of 14 and later attended Wyoming's collision and refinishing program.",
+    "core_product_or_service": "Custom car and truck restoration services",
+    "target_customer_or_audience": "Individuals with a passion for classic cars or trucks seeking customization, repair, or collision work",
+    "contact_details": "{'address': '102 5th Ave S, Strum WI 54770'}",
+    "services_offered": "['Dream it: Custom car/truck planning and design', 'Build it: Close communication during restoration projects', 'Fix it: Collision work, including frame pulls and insurance claims assistance', 'Loaner car service']",
+    "sections": "[{\"title\": \"HOME / LANDING\", \"content\": \"Maple Street Rods & Collision LLC...We’re a full-service auto body shop...\"}, {\"title\": \"ABOUT\", \"content\": \"General — Maple Street Rods & Collision LLC...I started working on my Grandpa’s farm making hay...\"}, {\"title\": \"SERVICES\", \"content\": \"Services 4 — Maple Street Rods & Collision LLC...Our services. Dream it...\"}]",
+    "b2b_qualified": false,
+    "b2b_confidence": 0,
+    "sales_questions": [
+      "What specific customization options are available for dream car projects?",
+      "Can Maple Street Rods & Collision LLC handle large-scale collision jobs?",
+      "What is the typical timeline for a restoration project?"
+    ],
+    "rationale": "B2B qualification is based on the company's focus on individual customers rather than businesses.",
+    "signals": [
+      "We’re a full-service auto body shop",
+      "Dream it. As part of our services, we can help you plan and design...",
+      "Services 4 — Maple Street Rods & Collision LLC"
+    ],
+    "research_notes": "google_search | The company's website does not provide clear contact information beyond the physical address."
+  },
+  {
+    "lead_input": "https://www.piedmontmoving.com",
+    "resolved_url": "https://www.piedmontmoving.com",
+    "company_name": "Piedmont Moving Systems",
+    "company_overview": "Family-owned business since 1981, specializing in secure storage and transportation of high-value customer assets for healthcare, biotech, and commercial teams in the Bay Area. Offers a wide range of comprehensive moving services including technology distribution systems, hospitality logistics, trade show and retail transport, data center transfers, and warehousing needs.",
+    "core_product_or_service": "Secure storage and transportation of high-value customer assets",
+    "target_customer_or_audience": "Healthcare, biotech, and commercial teams in the Bay Area",
+    "contact_details": "{'phones': ['800-886-6868'], 'emails': ['hello@piedmontmoving.com'], 'address': '2071 Ringwood Avenue, Suite D San Jose, CA 95131'}",
+    "services_offered": "['Full-Service Commercial Logistics', 'Storage Solutions', 'Supply Chain Management', 'White Glove Services', 'Hi-Tech Relocation', 'Commercial Storage']",
+    "sections": "[{\"title\": \"HOME / LANDING\", \"content\": \"...services offered...\"}, {\"title\": \"ABOUT\", \"content\": \"...company overview...\"}, {\"title\": \"CONTACT\", \"content\": \"...contact details...\"}]",
+    "b2b_qualified": true,
+    "b2b_confidence": 90,
+    "sales_questions": [
+      "What services are you interested in?",
+      "Full Name",
+      "Phone"
+    ],
+    "rationale": "The company primarily focuses on B2B services and provides detailed information about their offerings and contact details, indicating a potential interest in sales or partnerships.",
+    "signals": [
+      "San Jose Commercial Movers & Commercial Storage top of page Bay Area Logistics & Storage",
+      "Let’s get you a free quote!",
+      "Commercial Logistics",
+      "White Glove Services",
+      "Hi-Tech Relocation",
+      "Commercial Storage"
+    ],
+    "research_notes": "direct_url | The company has a strong online presence with detailed information about their services, history, and contact details. They are a member of the Unigroup network, which suggests they have a nationwide reach."
+  }
+]
