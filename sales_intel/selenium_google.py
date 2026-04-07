@@ -73,8 +73,3 @@ def search_google_query(driver, query: str, page_index: int) -> None:
 
 def fetch_organic_results_html(driver) -> str:
     return driver.page_source
-
-
-# Backwards-compatible name
-def open_google_results_page(driver, query: str, page_index: int) -> None:
-    search_google_query(driver, query, page_index)
